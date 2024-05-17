@@ -16,8 +16,201 @@
     <script src="https://www.google.com/jsapi"></script>
     <link rel="stylesheet" href="applab/applab.css">
     <link rel="stylesheet" href="style.css">
+    <!-- jQuery -->
+    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/jquery/3.5.1/jquery.min.js"></script>
+    <!-- HarmonyOS Sans -->
+    <!-- https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css -->
+    <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css"/>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" type="text/css"
+          href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="./css/loading.css">
+    <link rel="stylesheet" type="text/css" href="./css/animation.css">
+    <link rel="apple-touch-icon" href="https://aurora-cdn.wuhobin.top/blog/favicon.png">
+    <!-- Izitoast -->
+    <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/css/iziToast.min.css">
+    <script type="text/javascript"
+            src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-y/izitoast/1.4.0/js/iziToast.min.js">
+    </script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
   </head>
   <body>
-    <div id="divApplab" class="appModern running" style="width: 320px; height: 450px; display: block;"><div class="screen" tabindex="1" data-theme="default" id="screenStart" style="display: block; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgba(47, 220, 217, 0.17);"><div contenteditable="true" class="textArea" id="textAGroomRoom" style="width: 245px; height: 60px; border-style: solid; background-color: rgba(47, 220, 217, 0); color: rgb(27, 61, 88); border-color: rgba(255, 255, 255, 0); border-radius: 2px; border-width: 1px; font-family: &quot;Times New Roman&quot;, Times, serif; font-size: 31px; padding: 5px 15px; position: absolute; left: 40px; top: 20px; margin: 0px; text-align: center;">A Groom Room</div><div contenteditable="true" class="textArea" id="text_MyPet" style="width: 200px; height: 100px; border-style: solid; background-color: rgba(242, 242, 242, 0); color: rgb(77, 87, 95); border-color: rgba(255, 255, 255, 0); border-radius: 2px; border-width: 1px; font-family: &quot;Times New Roman&quot;, Times, serif; font-size: 27px; padding: 5px 15px; position: absolute; left: 110px; top: 65px; margin: 0px;">My Pet</div><div contenteditable="true" class="textArea" id="Label_PetColor" style="width: 160px; border-style: solid; background-color: rgb(12, 63, 72); color: rgb(243, 247, 251); border-color: rgb(41, 22, 22); border-radius: 6px; border-width: 3px; font-family: Arial, Helvetica, sans-serif; font-size: 21px; padding: 5px 15px; position: absolute; left: 0px; top: 145px; margin: 0px; height: 40px;">Pet Color</div><div contenteditable="true" class="textArea" id="Label_PetType" style="border-style: solid; background-color: rgb(12, 63, 72); color: rgb(243, 247, 251); border-color: rgb(41, 22, 22); border-radius: 6px; border-width: 3px; font-family: Arial, Helvetica, sans-serif; font-size: 21px; padding: 5px 15px; position: absolute; left: 0px; top: 200px; margin: 0px; height: 40px; width: 160px;">Pet Type</div><div contenteditable="true" class="textArea" id="Label_PetActivity" style="width: 160px; border-style: solid; background-color: rgb(12, 63, 72); color: rgb(243, 247, 251); border-color: rgb(41, 22, 22); border-radius: 6px; border-width: 3px; font-family: Arial, Helvetica, sans-serif; font-size: 21px; padding: 5px 15px; position: absolute; left: 0px; top: 255px; margin: 0px; height: 40px;">Pet Activity</div><div contenteditable="true" class="textArea" id="text_inputPetColor" style="width: 140px; height: 40px; border-style: solid; background-color: rgb(242, 242, 242); color: rgb(77, 87, 95); border-color: rgb(255, 255, 255); border-radius: 2px; border-width: 2px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; padding: 5px 15px; position: absolute; left: 175px; top: 145px; margin: 0px;"></div><div contenteditable="true" class="textArea" id="text_inputPetType" style="width: 140px; height: 40px; border-style: solid; background-color: rgb(242, 242, 242); color: rgb(77, 87, 95); border-color: rgb(255, 255, 255); border-radius: 2px; border-width: 2px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; padding: 5px 15px; position: absolute; left: 175px; top: 200px; margin: 0px;"></div><div contenteditable="true" class="textArea" id="text_inputPetActivity" style="width: 140px; height: 40px; border-style: solid; background-color: rgb(242, 242, 242); color: rgb(77, 87, 95); border-color: rgb(255, 255, 255); border-radius: 2px; border-width: 2px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; padding: 5px 15px; position: absolute; left: 175px; top: 255px; margin: 0px;"></div><div contenteditable="true" class="textArea" id="Label_BallSize" style="width: 160px; border-style: solid; background-color: rgb(12, 63, 72); color: rgb(243, 247, 251); border-color: rgb(41, 22, 22); border-radius: 6px; border-width: 3px; font-family: Arial, Helvetica, sans-serif; font-size: 21px; padding: 5px 15px; position: absolute; left: 0px; top: 310px; margin: 0px; height: 40px;">Ball Size</div><select id="dropDown_BallSize" style="margin: 0px; border-style: solid; background-color: rgb(242, 242, 242); color: rgb(77, 87, 95); background-image: url(&quot;data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%234d575f%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E&quot;); border-color: rgb(255, 255, 255); border-radius: 2px; border-width: 2px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; padding: 0px 30px 0px 15px; position: absolute; left: 175px; top: 315px; width: 140px; height: 40px;"><option>small</option><option>medium</option><option>large</option></select><button id="buttonSubmit" style="padding: 0px; margin: 0px; border-style: solid; height: 46px; width: 107px; background-color: rgb(77, 87, 95); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 110px; top: 375px;">Submit</button></div><div class="screen" tabindex="1" data-theme="default" id="screenResult" style="display: none; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgba(47, 220, 217, 0.17);"><div contenteditable="true" class="textArea" id="text_result" style="width: 290px; height: 145px; border-style: solid; background-color: rgb(242, 242, 242); color: rgb(77, 87, 95); border-color: rgb(255, 255, 255); border-radius: 2px; border-width: 1px; font-family: Arial, Helvetica, sans-serif; font-size: 22px; padding: 5px 15px; position: absolute; left: 15px; top: 20px; margin: 0px;"></div><button id="buttonAnotherPet" style="padding: 0px; margin: 0px; border-style: solid; height: 40px; width: 160px; background-color: rgb(77, 87, 95); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 85px; top: 375px;">Enter Another Pet</button></div></div>
-  </body>
+    <!--加载动画-->
+    <div id="loading-box">
+        <div class="loading-left-bg"></div>
+        <div class="loading-right-bg"></div>
+        <div class="spinner-box">
+            <div class="loader">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+            </div>
+            <div class="loading-word">
+                <p class="loading-title" id="loading-title">changlong website</p>
+                <span id="loading-text">loading</span>
+            </div>
+        </div>
+    </div>
+    <section id="section" class="section">
+        <!-- 背景图片 -->
+        <div class="bg-all">
+            <img id="bg" onerror="this.classList.add('error');">
+            <div class="cover"></div>
+        </div>
+        <!-- 鼠标指针 -->
+        <div id="g-pointer-1"></div>
+        <div id="g-pointer-2"></div>
+        <!-- 主体内容 -->
+        <main id="main" class="main">
+            <div class="container" id="container">
+                <div class="row" id="row">
+                    <div class="col left">
+                        <!--基本信息-->
+                        <div class="main-left">
+                            <!--Logo-->
+                            <div class="main-img">
+                                <!-- <img id="logo-img" src="./img/my_image.jpeg" alt="img"> -->
+                                <img src="./img/my_image.jpeg" alt="img">
+    
+                                <div class="img-title">
+                                    <span class="img-title-big" id="logo-text-1">Changlong</span>
+                                    <!-- <span class="img-text" id="logo-text-2">.Wu</span> -->
+                                </div>
+                            </div>
+                            <!--介绍信息-->
+                            <div class="message cards" id="switchmore">
+                                <div class="des" id="des">
+                                    <i class="fa-solid fa-quote-left"></i>
+                                    <div class="des-title"><span id="change">Hello&nbsp;World&nbsp;!</span><br/><span
+                                            id="change1">April showers bring May flowers</span></div>
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </div>
+                            </div>
+                            <!--社交链接-->
+                            <div class="social" id="social">
+                                <a href="https://github.com/changlongwu" class="link" id="github" style="margin-left: 4px"
+                                   target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/changlong-wu-a79156256/" class="link"
+                                   id="linkedin" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="mailto:tiantiana748@gmail.com" class="link" id="email">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                                <!-- <a href="https://space.bilibili.com/495003013" class="link" id="bilibili"
+                                   target="_blank">
+                                    <i class="fa-brands fa-bilibili"></i> -->
+                                <!-- </a>
+                                <a href="https://www.facebook.com/" class="link" id="facebook" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a> -->
+                                <a id="link-text">contact me here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--第二屏 Logo-->
+                    <div class="logo cards" style="display: none" id="changemore">
+                        <a class="logo-text" id="logo-text-small">wuhobin.top</a>
+                    </div>
+                    <div class="col right">
+                        <div class="main-right">
+                            <!--功能区-->
+                            <div class="row rightone" id="rightone">
+                                <div class="col hitokotos">
+                                    <!--一言-->
+                                    <div class="hitokoto cards" id="hitokoto">
+                                        <!--切换音乐-->
+                                        <div class="open-music fixed-top" id="open-music">
+                                            <i class="fa-solid fa-compact-disc"></i>
+                                            <span>&nbsp;打开音乐播放器</span>
+                                        </div>
+                                        <!--切换音乐结束-->
+                                        <div class="hitokoto-all">
+                                            <div class="hitokoto-text"><span
+                                                    id="hitokoto_text">每一个人都应该明确自己的方向和位置</span>
+                                            </div>
+                                            <div class="hitokoto-from">-「&nbsp;<span id="from_text">無名</span>&nbsp;」
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col times">
+                                    <!--时间-->
+                                    <div class="time cards" id="upWeather">
+                                        <div class="timeshow" id="time">
+                                            2000&nbsp;年&nbsp;0&nbsp;月&nbsp;00&nbsp;日&nbsp;<span
+                                                class="weekday">星期一</span><br><span class="time-text">00:00:00</span>
+                                        </div>
+                                        <!-- <div class="weather">
+                                            <span id="city_text">天气</span>&nbsp;
+                                            <span id="wea_text">加载失败</span>&nbsp;
+                                            <span id="tem_text"></span>
+                                            <span id="win_text">次数</span>
+                                            <span id="win_speed">超限</span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--分隔线-->
+                            <div class="row">
+                              <div class="col">
+                                <div id="divApplab" class="appModern running" style="width: 320px; height: 450px; display: block;"><div class="screen" tabindex="1" data-theme="default" id="screenStart" style="display: block; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgba(47, 220, 217, 0.17);"><div contenteditable="true" class="textArea" id="textAGroomRoom" style="width: 245px; height: 60px; border-style: solid; background-color: rgba(47, 220, 217, 0); color: rgb(27, 61, 88); border-color: rgba(255, 255, 255, 0); border-radius: 2px; border-width: 1px; font-family: &quot;Times New Roman&quot;, Times, serif; font-size: 31px; padding: 5px 15px; position: absolute; left: 40px; top: 20px; margin: 0px; text-align: center;">A Groom Room</div><div contenteditable="true" class="textArea" id="text_MyPet" style="width: 200px; height: 100px; border-style: solid; background-color: rgba(242, 242, 242, 0); color: rgb(77, 87, 95); border-color: rgba(255, 255, 255, 0); border-radius: 2px; border-width: 1px; font-family: &quot;Times New Roman&quot;, Times, serif; font-size: 27px; padding: 5px 15px; position: absolute; left: 110px; top: 65px; margin: 0px;">My Pet</div><div contenteditable="true" class="textArea" id="Label_PetColor" style="width: 160px; border-style: solid; background-color: rgb(12, 63, 72); color: rgb(243, 247, 251); border-color: rgb(41, 22, 22); border-radius: 6px; border-width: 3px; font-family: Arial, Helvetica, sans-serif; font-size: 21px; padding: 5px 15px; position: absolute; left: 0px; top: 145px; margin: 0px; height: 40px;">Pet Color</div><div contenteditable="true" class="textArea" id="Label_PetType" style="border-style: solid; background-color: rgb(12, 63, 72); color: rgb(243, 247, 251); border-color: rgb(41, 22, 22); border-radius: 6px; border-width: 3px; font-family: Arial, Helvetica, sans-serif; font-size: 21px; padding: 5px 15px; position: absolute; left: 0px; top: 200px; margin: 0px; height: 40px; width: 160px;">Pet Type</div><div contenteditable="true" class="textArea" id="Label_PetActivity" style="width: 160px; border-style: solid; background-color: rgb(12, 63, 72); color: rgb(243, 247, 251); border-color: rgb(41, 22, 22); border-radius: 6px; border-width: 3px; font-family: Arial, Helvetica, sans-serif; font-size: 21px; padding: 5px 15px; position: absolute; left: 0px; top: 255px; margin: 0px; height: 40px;">Pet Activity</div><div contenteditable="true" class="textArea" id="text_inputPetColor" style="width: 140px; height: 40px; border-style: solid; background-color: rgb(242, 242, 242); color: rgb(77, 87, 95); border-color: rgb(255, 255, 255); border-radius: 2px; border-width: 2px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; padding: 5px 15px; position: absolute; left: 175px; top: 145px; margin: 0px;"></div><div contenteditable="true" class="textArea" id="text_inputPetType" style="width: 140px; height: 40px; border-style: solid; background-color: rgb(242, 242, 242); color: rgb(77, 87, 95); border-color: rgb(255, 255, 255); border-radius: 2px; border-width: 2px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; padding: 5px 15px; position: absolute; left: 175px; top: 200px; margin: 0px;"></div><div contenteditable="true" class="textArea" id="text_inputPetActivity" style="width: 140px; height: 40px; border-style: solid; background-color: rgb(242, 242, 242); color: rgb(77, 87, 95); border-color: rgb(255, 255, 255); border-radius: 2px; border-width: 2px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; padding: 5px 15px; position: absolute; left: 175px; top: 255px; margin: 0px;"></div><div contenteditable="true" class="textArea" id="Label_BallSize" style="width: 160px; border-style: solid; background-color: rgb(12, 63, 72); color: rgb(243, 247, 251); border-color: rgb(41, 22, 22); border-radius: 6px; border-width: 3px; font-family: Arial, Helvetica, sans-serif; font-size: 21px; padding: 5px 15px; position: absolute; left: 0px; top: 310px; margin: 0px; height: 40px;">Ball Size</div><select id="dropDown_BallSize" style="margin: 0px; border-style: solid; background-color: rgb(242, 242, 242); color: rgb(77, 87, 95); background-image: url(&quot;data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%234d575f%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E&quot;); border-color: rgb(255, 255, 255); border-radius: 2px; border-width: 2px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; padding: 0px 30px 0px 15px; position: absolute; left: 175px; top: 315px; width: 140px; height: 40px;"><option>small</option><option>medium</option><option>large</option></select><button id="buttonSubmit" style="padding: 0px; margin: 0px; border-style: solid; height: 46px; width: 107px; background-color: rgb(77, 87, 95); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 110px; top: 375px;">Submit</button></div><div class="screen" tabindex="1" data-theme="default" id="screenResult" style="display: none; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgba(47, 220, 217, 0.17);"><div contenteditable="true" class="textArea" id="text_result" style="width: 290px; height: 145px; border-style: solid; background-color: rgb(242, 242, 242); color: rgb(77, 87, 95); border-color: rgb(255, 255, 255); border-radius: 2px; border-width: 1px; font-family: Arial, Helvetica, sans-serif; font-size: 22px; padding: 5px 15px; position: absolute; left: 15px; top: 20px; margin: 0px;"></div><button id="buttonAnotherPet" style="padding: 0px; margin: 0px; border-style: solid; height: 40px; width: 160px; background-color: rgb(77, 87, 95); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 85px; top: 375px;">Enter Another Pet</button></div></div>
+                              </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </main>
+        <!-- 版权信息 -->
+        <footer id="footer" class="fixed-bottom footer">
+            <div class="power">
+                    <span id="power">Copyright&nbsp;&copy;
+                        <script>
+                            document.write((new Date()).getFullYear());
+                        </script>
+                        <a href="https://blog.bywind.xyz" id="power-text">Changlong</a>
+                    </span>
+                <!-- 以下信息请不要修改哦 -->
+                <!--                <span id="made">&amp;&nbsp;Made&nbsp;by&nbsp;<a href="https://github.com/imsyy/home"-->
+                <!--                        target="_blank">imsyy</a></span>-->
+                <!-- 站点备案 -->
+                <a href="https://beian.miit.gov.cn" id="beian" target="_blank">&amp;&nbsp;Made by Changlong</a>
+            </div>
+            <!-- 歌词显示 -->
+            <div id="lrc"></div>
+        </footer>
+    </section>
+    <!-- sw.js -->
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker.register("sw.js");
+            });
+        }
+    </script>
+    <!-- noscript -->
+    <noscript>
+        <div class="noscript fixed-top">请开启 JavaScript</div>
+    </noscript>
+    <!-- JS -->
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/set.js"></script>
+    <script type="text/javascript" src="./js/time.js"></script>
+    <script type="text/javascript" src="./js/js.cookie.js"></script>
+    <script type="text/javascript"
+            src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/bootstrap/5.1.0/js/bootstrap.min.js">
+    </script>
+    </body>
 </html>
+ <!-- <div id="divApplab" class="appModern running" style="width: 320px; height: 450px; display: block;"><div class="screen" tabindex="1" data-theme="default" id="screenStart" style="display: block; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgba(47, 220, 217, 0.17);"><div contenteditable="true" class="textArea" id="textAGroomRoom" style="width: 245px; height: 60px; border-style: solid; background-color: rgba(47, 220, 217, 0); color: rgb(27, 61, 88); border-color: rgba(255, 255, 255, 0); border-radius: 2px; border-width: 1px; font-family: &quot;Times New Roman&quot;, Times, serif; font-size: 31px; padding: 5px 15px; position: absolute; left: 40px; top: 20px; margin: 0px; text-align: center;">A Groom Room</div><div contenteditable="true" class="textArea" id="text_MyPet" style="width: 200px; height: 100px; border-style: solid; background-color: rgba(242, 242, 242, 0); color: rgb(77, 87, 95); border-color: rgba(255, 255, 255, 0); border-radius: 2px; border-width: 1px; font-family: &quot;Times New Roman&quot;, Times, serif; font-size: 27px; padding: 5px 15px; position: absolute; left: 110px; top: 65px; margin: 0px;">My Pet</div><div contenteditable="true" class="textArea" id="Label_PetColor" style="width: 160px; border-style: solid; background-color: rgb(12, 63, 72); color: rgb(243, 247, 251); border-color: rgb(41, 22, 22); border-radius: 6px; border-width: 3px; font-family: Arial, Helvetica, sans-serif; font-size: 21px; padding: 5px 15px; position: absolute; left: 0px; top: 145px; margin: 0px; height: 40px;">Pet Color</div><div contenteditable="true" class="textArea" id="Label_PetType" style="border-style: solid; background-color: rgb(12, 63, 72); color: rgb(243, 247, 251); border-color: rgb(41, 22, 22); border-radius: 6px; border-width: 3px; font-family: Arial, Helvetica, sans-serif; font-size: 21px; padding: 5px 15px; position: absolute; left: 0px; top: 200px; margin: 0px; height: 40px; width: 160px;">Pet Type</div><div contenteditable="true" class="textArea" id="Label_PetActivity" style="width: 160px; border-style: solid; background-color: rgb(12, 63, 72); color: rgb(243, 247, 251); border-color: rgb(41, 22, 22); border-radius: 6px; border-width: 3px; font-family: Arial, Helvetica, sans-serif; font-size: 21px; padding: 5px 15px; position: absolute; left: 0px; top: 255px; margin: 0px; height: 40px;">Pet Activity</div><div contenteditable="true" class="textArea" id="text_inputPetColor" style="width: 140px; height: 40px; border-style: solid; background-color: rgb(242, 242, 242); color: rgb(77, 87, 95); border-color: rgb(255, 255, 255); border-radius: 2px; border-width: 2px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; padding: 5px 15px; position: absolute; left: 175px; top: 145px; margin: 0px;"></div><div contenteditable="true" class="textArea" id="text_inputPetType" style="width: 140px; height: 40px; border-style: solid; background-color: rgb(242, 242, 242); color: rgb(77, 87, 95); border-color: rgb(255, 255, 255); border-radius: 2px; border-width: 2px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; padding: 5px 15px; position: absolute; left: 175px; top: 200px; margin: 0px;"></div><div contenteditable="true" class="textArea" id="text_inputPetActivity" style="width: 140px; height: 40px; border-style: solid; background-color: rgb(242, 242, 242); color: rgb(77, 87, 95); border-color: rgb(255, 255, 255); border-radius: 2px; border-width: 2px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; padding: 5px 15px; position: absolute; left: 175px; top: 255px; margin: 0px;"></div><div contenteditable="true" class="textArea" id="Label_BallSize" style="width: 160px; border-style: solid; background-color: rgb(12, 63, 72); color: rgb(243, 247, 251); border-color: rgb(41, 22, 22); border-radius: 6px; border-width: 3px; font-family: Arial, Helvetica, sans-serif; font-size: 21px; padding: 5px 15px; position: absolute; left: 0px; top: 310px; margin: 0px; height: 40px;">Ball Size</div><select id="dropDown_BallSize" style="margin: 0px; border-style: solid; background-color: rgb(242, 242, 242); color: rgb(77, 87, 95); background-image: url(&quot;data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%234d575f%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E&quot;); border-color: rgb(255, 255, 255); border-radius: 2px; border-width: 2px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; padding: 0px 30px 0px 15px; position: absolute; left: 175px; top: 315px; width: 140px; height: 40px;"><option>small</option><option>medium</option><option>large</option></select><button id="buttonSubmit" style="padding: 0px; margin: 0px; border-style: solid; height: 46px; width: 107px; background-color: rgb(77, 87, 95); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 110px; top: 375px;">Submit</button></div><div class="screen" tabindex="1" data-theme="default" id="screenResult" style="display: none; height: 450px; width: 320px; left: 0px; top: 0px; position: absolute; z-index: 0; background-color: rgba(47, 220, 217, 0.17);"><div contenteditable="true" class="textArea" id="text_result" style="width: 290px; height: 145px; border-style: solid; background-color: rgb(242, 242, 242); color: rgb(77, 87, 95); border-color: rgb(255, 255, 255); border-radius: 2px; border-width: 1px; font-family: Arial, Helvetica, sans-serif; font-size: 22px; padding: 5px 15px; position: absolute; left: 15px; top: 20px; margin: 0px;"></div><button id="buttonAnotherPet" style="padding: 0px; margin: 0px; border-style: solid; height: 40px; width: 160px; background-color: rgb(77, 87, 95); color: rgb(255, 255, 255); border-color: rgb(77, 87, 95); border-radius: 4px; border-width: 1px; font-family: &quot;Arial Black&quot;, Gadget, sans-serif; font-size: 15px; position: absolute; left: 85px; top: 375px;">Enter Another Pet</button></div></div> -->
